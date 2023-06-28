@@ -1,0 +1,44 @@
+#pricingTable
+{
+    display: flex;
+    justify-content: center;
+}
+
+#pricingTable > div
+{
+    margin: 15px;
+    border-style: solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas: 
+        "topo" "topo"
+        "titulo" "preco"
+        "botao" "botao";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+button
+{
+    text-align: center;
+    grid-area: botao;
+    padding: 15px;
+    width: 100%;
+}
+
+.titulo
+{
+    grid-area: titulo;
+}
+
+.preco
+{
+    grid-area: preco;
+}
+
+.mensagem
+{
+    grid-area: topo;
+}
