@@ -1,1 +1,1 @@
-# Pricing-Table
+# Pricing Table • Desafio 15
