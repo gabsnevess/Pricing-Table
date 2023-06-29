@@ -1,44 +1,120 @@
-#pricingTable
+@media screen and (max-width: 768px) 
 {
-    display: flex;
-    justify-content: center;
+    #pricingTable
+    {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 
-#pricingTable > div
+.plano
 {
+    border: 1px solid #ccc;
+    padding: 20px;
     margin: 15px;
-    border-style: solid;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+  
+#pricingTable
+{
     display: grid;
-    grid-template-areas: 
-        "topo" "topo"
-        "titulo" "preco"
-        "botao" "botao";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 5px;
+    place-content: center;
 }
 
 button
 {
     text-align: center;
-    grid-area: botao;
     padding: 15px;
     width: 100%;
-}
-
-.titulo
-{
-    grid-area: titulo;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .preco
 {
-    grid-area: preco;
+    float: right;
+    margin-top: 15px;
+}
+
+.titulo
+{
+    float: left;
+}
+
+span, h1
+{
+    display: inline-block;
+}
+
+#ultimate
+{
+    background-color: #0F172A;
+    color: white;
+}
+
+#melhor
+{
+    background-color: #996DFF;
+    border: none;
+    color: white;
 }
 
 .mensagem
 {
-    grid-area: topo;
+    color: #996DFF;
+    margin-top: 36px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.preco > b
+{
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+#vantagemCard
+{
+    background-color: #FBA94C;
+    color: #0F172A;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 13%;
+    left: 16%;
+    margin-bottom: none;
+    width: 200px;
+}
+
+#ultimate > p.mensagem
+{
+    margin-top: 20px;
+}
+
+.plano:hover
+{
+    border-color: #996DFF;
+}
+
+button:hover
+{
+    background-color: #0F172A;
+    border: none;
+    color: white;
+}
+
+#ultimate > button:hover
+{
+    background-color: #7C3AED;
 }
